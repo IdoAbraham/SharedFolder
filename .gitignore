@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.local-demo/
+test-results/
+.test-tmp/
+server-data/
+pytest-cache-files-*/
+
+# Local files that are not part of the published project
+.claude/
+*.zip
+PROJECT_PLANNING_*.md
+docs/*.docx
+docs/*.pdf
+docs/open-decisions.md

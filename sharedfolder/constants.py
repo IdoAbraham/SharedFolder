@@ -1,0 +1,47 @@
+"""Fixed values used across the project."""
+
+TRANSFER_CHUNK_BYTES = 64 * 1024 # 64 KB
+
+MAX_DISPLAY_NAME_LENGTH = 80
+
+# Timing, in seconds
+SYNC_INTERVAL_SECONDS = 2
+HEARTBEAT_INTERVAL_SECONDS = 5
+PRESENCE_EXPIRY_SECONDS = 15
+CONNECT_TIMEOUT_SECONDS = 5
+TRANSFER_TIMEOUT_SECONDS = 30
+RETRY_INTERVAL_SECONDS = 5
+HEARTBEAT_JOIN_SECONDS = 6
+
+DEFAULT_SERVER_URL = "http://127.0.0.1:8000"
+DEFAULT_DISPLAY_NAME = "My computer"
+STAGING_DIRECTORY_NAME = ".sharedfolder-tmp"
+
+# HTTP headers
+CLIENT_ID_HEADER = "X-Client-ID"
+CONTENT_HASH_HEADER = "X-Content-SHA256"
+
+# Entry kinds
+FILE_KIND = "file"
+DIRECTORY_KIND = "directory"
+
+# Changes the server applies
+OP_UPLOAD = "put"
+OP_DELETE_FILE = "delete"
+OP_CREATE_DIRECTORY = "mkdir"
+OP_DELETE_DIRECTORY = "rmdir"
+OP_RESTORE = "restore"
+
+# Actions shown in the history and activity log
+ACTION_CREATED = "Created"
+ACTION_UPDATED = "Updated"
+ACTION_DELETED = "Deleted"
+ACTION_RESTORED = "Restored"
+ACTIONS = (ACTION_CREATED, ACTION_UPDATED, ACTION_DELETED, ACTION_RESTORED)
+
+# Synchronization states a client reports
+STATE_SYNCING = "syncing"
+STATE_IDLE = "idle"
+STATE_PAUSED = "paused"
+STATE_ERROR = "error"
+SYNC_STATES = (STATE_SYNCING, STATE_IDLE, STATE_PAUSED, STATE_ERROR)
